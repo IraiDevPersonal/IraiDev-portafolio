@@ -1,5 +1,5 @@
-import avatar from '../../../assets/images/avatar.jpeg'
-import { ClipBoard } from '../../../components/ui'
+import avatar from '../../assets/images/avatar.jpeg'
+import { ClipBoard } from '../ui'
 
 const EMAIL = 'ignacio.arr01@gmail.com',
    PHONE = '+569 569 805 65'

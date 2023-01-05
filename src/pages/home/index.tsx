@@ -1,13 +1,8 @@
 import { MainLayout } from '../../components/layouts'
-import {
-   DevSkillItem,
-   PortFolioContainer,
-   PortFolioHeader,
-   AboutMe,
-   SoftSkillItem,
-   StudyHistpryitem,
-} from './components'
+import { DevSkillItem, AboutMe, SoftSkillItem, StudyHistpryitem } from './components'
 import { withList } from '../../components/hocs'
+import { DevSkillProps, SoftSkillProps, StudyHistoryProps } from '../../models'
+import { PortFolioContainer, PortFolioFooter, PortFolioHeader } from '../../components/portfolio'
 import uuid from 'react-id-generator'
 
 import tailwind from '../../assets/svg/tailwindcss-icon.svg'
@@ -20,10 +15,9 @@ import typestript from '../../assets/svg/typescript.svg'
 import javascript from '../../assets/svg/javascript.svg'
 import git from '../../assets/svg/git.svg'
 
+import { FaRegHandshake, FaUserGraduate } from 'react-icons/fa'
 import { BsPersonCheckFill } from 'react-icons/bs'
 import { BiChip } from 'react-icons/bi'
-import { FaRegHandshake, FaUserGraduate } from 'react-icons/fa'
-import { DevSkillProps, SoftSkillProps, StudyHistoryProps } from '../../models'
 
 const DEV_SKILLS: DevSkillProps[] = [
    { key: uuid(), title: 'ReactJS', svg: reactJS, level: 'Intermedio' },
@@ -89,12 +83,13 @@ export default function HomePage() {
       <MainLayout title="Home">
          <PortFolioContainer>
             <PortFolioHeader />
-            <section className="space-y-4 p-5">
+            <section className="space-y-8 p-5">
                <AboutMe />
                <WithDevSkills />
                <WithSoftSkills />
                <WithStudyHistory />
             </section>
+            <PortFolioFooter />
          </PortFolioContainer>
       </MainLayout>
    )
