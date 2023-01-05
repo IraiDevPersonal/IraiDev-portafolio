@@ -1,1 +1,1 @@
-export * from './skillsList'
+export * from './withList'

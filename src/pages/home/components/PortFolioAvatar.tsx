@@ -4,7 +4,7 @@ import { ClipBoard } from '../../../components/ui'
 const EMAIL = 'ignacio.arr01@gmail.com',
    PHONE = '+569 569 805 65'
 
-export function Avatar() {
+export function PortFolioAvatar() {
    return (
       <div className="flex flex-col items-center">
          <img

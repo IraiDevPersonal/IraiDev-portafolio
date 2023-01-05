@@ -1,5 +1,5 @@
 import { Link, Navbar } from '../../../components/ui'
-import { Avatar, DownloadCV, LinkeIn } from './'
+import { PortFolioAvatar, DownloadCV, LinkeIn } from './'
 
 import { HiUserCircle } from 'react-icons/hi'
 import { BiCodeAlt } from 'react-icons/bi'
@@ -7,7 +7,7 @@ import { BiCodeAlt } from 'react-icons/bi'
 export function PortFolioHeader() {
    return (
       <header className="flex flex-col gap-4 justify-center bg-slate-900 p-5">
-         <Avatar />
+         <PortFolioAvatar />
          <span className="absolute top-5 right-5">
             <DownloadCV />
          </span>
