@@ -1,4 +1,5 @@
 import { ReactNode, useEffect } from 'react'
+import { AnimatedBackground } from '../ui'
 
 interface Props {
    children: ReactNode
@@ -12,6 +13,7 @@ export function MainLayout({ children, title }: Props) {
 
    return (
       <main className="min-h-screen w-full lg:py-10 bg-slate-900 text-slate-100 transition-all">
+         <AnimatedBackground />
          {children}
       </main>
    )

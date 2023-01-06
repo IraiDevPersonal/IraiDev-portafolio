@@ -2,7 +2,7 @@ import { MainLayout } from '../../components/layouts'
 import { DevSkillItem, AboutMe, SoftSkillItem, StudyHistpryitem } from './components'
 import { withList } from '../../components/hocs'
 import { DevSkillProps, SoftSkillProps, StudyHistoryProps } from '../../models'
-import { PortFolioContainer, PortFolioFooter, PortFolioHeader } from '../../components/portfolio'
+import { PortFolioContainer } from '../../components/portfolio'
 import uuid from 'react-id-generator'
 
 import tailwind from '../../assets/svg/tailwindcss-icon.svg'
@@ -82,14 +82,10 @@ export default function HomePage() {
    return (
       <MainLayout title="Home">
          <PortFolioContainer>
-            <PortFolioHeader />
-            <section className="space-y-8 p-5">
-               <AboutMe />
-               <WithDevSkills />
-               <WithSoftSkills />
-               <WithStudyHistory />
-            </section>
-            <PortFolioFooter />
+            <AboutMe />
+            <WithDevSkills />
+            <WithSoftSkills />
+            <WithStudyHistory />
          </PortFolioContainer>
       </MainLayout>
    )

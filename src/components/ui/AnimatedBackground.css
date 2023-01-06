@@ -1,0 +1,20 @@
+.floating_chars {
+   position: absolute;
+   bottom: 0;
+   animation: charAnimation 4s linear infinite;
+}
+
+@keyframes charAnimation {
+   0% {
+      opacity: 0%;
+   }
+   5% {
+      opacity: 50%;
+   }
+   20% {
+      opacity: 100%;
+   }
+   100% {
+      bottom: 100vh;
+   }
+}
