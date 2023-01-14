@@ -1,4 +1,6 @@
 export * from './AnimatedBackground'
+export * from './Carrousel'
 export * from './ClipBoard'
 export * from './Link'
+export * from './Modal'
 export * from './Navbar'
