@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import { PortFolioFooter } from './PortFolioFooter'
-import { PortFolioHeader } from './PortFolioHerader'
+import { PortFolioHeader } from './PortFolioHeader'
 
 interface Props {
    children: ReactNode

@@ -1,5 +1,5 @@
 import { Link, Navbar } from '../ui'
-import { PortFolioAvatar, DownloadCV, LinkedInLink, GithubLink } from './'
+import { PortFolioAvatar, DownloadCV, LinkedInLink, GithubLink } from '.'
 
 import { HiUserCircle } from 'react-icons/hi'
 import { BiCodeAlt } from 'react-icons/bi'
@@ -14,7 +14,7 @@ export function PortFolioHeader() {
             <GithubLink />
          </div>
          <Navbar>
-            <Link to="/" label="Sobre me" icon={<HiUserCircle />} />
+            <Link to="/" label="Sobre mi" icon={<HiUserCircle />} />
             <Link to="/proyectos" label="Proyectos" icon={<BiCodeAlt />} />
          </Navbar>
       </header>
