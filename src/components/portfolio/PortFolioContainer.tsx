@@ -8,7 +8,7 @@ interface Props {
 
 export function PortFolioContainer({ children }: Props) {
    return (
-      <div className="relative container mx-auto max-w-5xl lg:rounded-lg bg-slate-800 shadow-xl overflow-hidden lg:border border-slate-700 opacity-80 backdrop-blur-3xl">
+      <div className="relative container mx-auto max-w-5xl lg:rounded-lg bg-slate-800 shadow-xl overflow-hidden lg:border border-slate-700 opacity-80">
          <PortFolioHeader />
          <section className="space-y-8 p-5">{children}</section>
          <PortFolioFooter />
