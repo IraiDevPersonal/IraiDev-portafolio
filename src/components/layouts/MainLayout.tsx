@@ -12,7 +12,7 @@ export function MainLayout({ children, title }: Props) {
    }, [title])
 
    return (
-      <main className="min-h-screen w-full lg:py-10 bg-slate-900 text-slate-100 transition-all">
+      <main className="min-h-screen w-full lg:py-10 bg-slate-900 text-slate-100 transition-all font-custom overscroll-contain">
          <AnimatedBackground />
          {children}
       </main>
