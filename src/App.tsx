@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import { Fallback } from './components/ui'
 import './assets/css/index.css'
 
@@ -9,12 +9,12 @@ const ProjectsPage = lazy(() => import('./pages/projects'))
 export default function App() {
    return (
       <Suspense fallback={<Fallback />}>
-         <BrowserRouter>
+         <HashRouter>
             <Routes>
                <Route path="/" element={<HomePage />} />
                <Route path="/proyectos" element={<ProjectsPage />} />
             </Routes>
-         </BrowserRouter>
+         </HashRouter>
       </Suspense>
    )
 }
