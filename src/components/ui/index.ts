@@ -1,6 +1,7 @@
 export * from './AnimatedBackground'
 export * from './Carrousel'
 export * from './ClipBoard'
+export * from './DarkModeToggler'
 export * from './Fallback'
 export * from './Link'
 export * from './Modal'

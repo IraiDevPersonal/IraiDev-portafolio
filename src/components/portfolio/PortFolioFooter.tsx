@@ -5,7 +5,7 @@ import tailwindSVG from '../../assets/svg/tailwindcss-icon.svg'
 
 export function PortFolioFooter() {
    return (
-      <footer className="flex flex-wrap gap-4 justify-around items-center bg-slate-900 p-5">
+      <footer className="flex flex-wrap gap-4 justify-around items-center dark:bg-slate-900 bg-slate-50 p-5">
          <div>
             <span>Creado por: IraiDev - Ignacio Arriagada 🧑‍💻</span>
          </div>

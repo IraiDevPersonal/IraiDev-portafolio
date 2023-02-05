@@ -14,15 +14,15 @@ export function StudyHistpryitem({
    return (
       <li className="flex flex-col gap-3 min-w-full border-l border-slate-500 pl-10 pt-4 relative">
          <span className="absolute top-7 left-0 border-t border-slate-500 w-5" />
-         <span className="absolute top-7 left-5 transform -translate-y-1/2 block h-2 w-2 bg-blue-300 rounded-full" />
+         <span className="absolute top-7 left-5 transform -translate-y-1/2 block h-2 w-2 dark:bg-blue-300 bg-blue-400 rounded-full" />
          <header className="flex items-center justify-between gap-3">
             <h5 className="font-semibold">
                {title} - ({institution})
             </h5>
          </header>
-         <section className="text-slate-400 text-sm pl-2">
+         <section className="dark:text-slate-400 text-slate-500 text-sm pl-2">
             <p>{description}</p>
-            <span className="text-slate-500 text-xs">{date}</span>
+            <span className="dark:text-slate-500 text-slate-600 text-xs">{date}</span>
          </section>
       </li>
    )

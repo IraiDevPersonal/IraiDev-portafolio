@@ -21,7 +21,7 @@ export function CreatedBy({ svg, animate = 'none', label, animateDuration = 5000
             src={svg}
             alt="logo"
          />
-         <span className="text-xs text-slate-400">{label}</span>
+         <span className="text-xs dark:text-slate-400 text-slate-500">{label}</span>
       </div>
    )
 }

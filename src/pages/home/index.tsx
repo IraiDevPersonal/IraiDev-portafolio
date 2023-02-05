@@ -24,11 +24,11 @@ const DEV_SKILLS: DevSkillProps[] = [
    { key: uuid(), title: 'Javascript', svg: javascript, level: 'Intermedio' },
    { key: uuid(), title: 'Typescript', svg: typestript, level: 'Intermedio' },
    { key: uuid(), title: 'HTML5', svg: html, level: 'Intermedio' },
-   { key: uuid(), title: 'CSS3', svg: css, level: 'Basico' },
-   { key: uuid(), title: 'Tailwind', svg: tailwind, level: 'Intermedio' },
+   { key: uuid(), title: 'CSS3', svg: css, level: 'Intermedio' },
+   { key: uuid(), title: 'Tailwind', svg: tailwind, level: 'Avanzado' },
    { key: uuid(), title: 'Material UI', svg: materialUI, level: 'Intermedio' },
    { key: uuid(), title: 'Redux', svg: redux, level: 'Basico' },
-   { key: uuid(), title: 'Git', svg: git, level: 'Basico' },
+   { key: uuid(), title: 'Git', svg: git, level: 'Intermedio' },
 ]
 
 const SOFT_SKILLS: SoftSkillProps[] = [

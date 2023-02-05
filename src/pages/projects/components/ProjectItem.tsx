@@ -13,7 +13,7 @@ export function ProjectItem({ img, title, dataset }: ProjectItemProps) {
       <>
          <li
             onClick={() => setIsOpen(true)}
-            className="flex flex-col gap-4 items-center p-3 rounded-lg border border-slate-700 bg-slate-900 w-max hover:scale-105 transition-transform hover:cursor-pointer"
+            className="flex flex-col gap-4 items-center p-3 rounded-lg border dark:border-slate-700 border-slate-300 dark:bg-slate-900 bg-slate-200 w-max hover:scale-105 transition-transform hover:cursor-pointer"
          >
             <img className="w-52 h-32 object-cover rounded-md" src={img} alt={title} />
             <span className="font-semibold text-center text-sm">{title}</span>

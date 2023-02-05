@@ -58,7 +58,7 @@ export function Modal({
       <Transition appear show={open} as={Fragment}>
          <Dialog as={as} onSubmit={onSubmit} className="relative z-40" onClose={handleClose}>
             <Transition.Child as={Fragment} {...BACKDROP_STYLES}>
-               <div className="fixed inset-0 bg-black/50 z-40" />
+               <div className="fixed inset-0 dark:bg-black/50 bg-white/70 z-40" />
             </Transition.Child>
             <div className="fixed inset-0 scroll-app z-40">
                <div className="flex min-h-full items-center justify-center">
@@ -66,15 +66,15 @@ export function Modal({
                      <Dialog.Panel className={`relative w-full p-2 bg-transparent max-w-5xl`}>
                         <button
                            onClick={onClose}
-                           className="grid place-content-center rounded-full outline-none text-slate-100 bg-slate-700 hover:bg-red-500 transition-colors hover:text-white shadow-md shadow-slate-800 h-7 w-[29px] absolute z-40 top-0 right-0"
+                           className="grid place-content-center rounded-full outline-none dark:text-slate-100 text-slate-500 dark:bg-slate-700 bg-slate-50 dark:hover:bg-red-500 hover:bg-red-500 transition-colors hover:text-white shadow-md dark:shadow-slate-800 h-7 w-[29px] absolute z-40 top-0 right-0"
                         >
                            <HiOutlineX className="h-5 w-5" />
                         </button>
-                        <div className="w-full bg-slate-900 rounded-lg transform align-middle shadow-xl shadow-slate-900 divide-y divide-slate-700 border border-slate-700 overflow-hidden">
+                        <div className="w-full dark:bg-slate-900 bg-slate-50 rounded-lg transform align-middle shadow-xl dark:shadow-slate-900 divide-y dark:divide-slate-700 divide-slate-200 border dark:border-slate-700 border-slate-200 overflow-hidden">
                            {Boolean(title) && (
                               <Dialog.Title
                                  as="h3"
-                                 className="text-xl font-medium text-slate-100 text-left p-5"
+                                 className="text-xl font-medium dark:text-slate-100 text-slate-700 text-left p-5"
                               >
                                  {title}
                               </Dialog.Title>

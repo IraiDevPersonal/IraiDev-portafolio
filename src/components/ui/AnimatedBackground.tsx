@@ -152,7 +152,7 @@ const TECHNOLOGIES: TechProps[] = [
 export function AnimatedBackground() {
    return (
       <div className="fixed inset-0">
-         <section className="min-h-screen w-full mx-auto relative text-4xl text-slate-800">
+         <section className="min-h-screen w-full mx-auto relative text-4xl dark:text-slate-700 text-slate-400">
             {TECHNOLOGIES.map((tech) => (
                <span
                   className="floating_chars"
